@@ -4,7 +4,7 @@ A search tool for finding timestamps of keywords in subtitles within the YouTube
 To Setup:
 - Requires Ruby to be installed and you know how to run via command line. https://www.ruby-lang.org/en/downloads/
 - Create a folder called 'text' in the same folder as search.rb (./text/)
-- Requires yt-dlp to download .ttml subtitle files, and placed in the ./text/ folder. https://github.com/yt-dlp/yt-dlp
+- Requires you have .ttml subtitle files, and placed in the ./text/ folder. Highly reccommend yt-dlp. https://github.com/yt-dlp/yt-dlp
 - Use "yt-dlp --skip-download --write-auto-subs --sub-format ttml {PlaylistURL}" twice inside the ./text/ folder, replacing "{PlaylistURL}" with the URLs of each the VCRParty Live and Shaturday Morning Cartoons playlists (or individual episode URLs to get the .ttml files one at a time).
 
 To Run:
