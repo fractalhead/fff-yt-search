@@ -26,7 +26,7 @@ File.open(fname, "w") do |file|
     matches = []
     File.readlines(fh).each{|line|
       line.match(/begin=\"([0-9:\.]+)\".+\>(.*#{search_word}.*)\<\/p\>/i){|mline|
-        matches << [mline[1], (prev+" "+mline[2]).gsub("#{search_word}","<strong>#{search_word}</strong>")]
+        matches << [mline[1], (prev+" "+mline[2]).gsub(/(#{Regexp.escape(search_word)})/i,'<strong>\1</strong>')]
       }
       prev = ""
       line.match(/\>(.+)\<\/p\>/i){|pline|
