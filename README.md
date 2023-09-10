@@ -13,7 +13,10 @@ To Run:
 - An HTML file 'result.html' will be generated with links to YouTube, 5 secs before the listed timestamps. Open/refresh in a browser after searches.
 
 Tips:
+- Capitalization does not matter, but punctuation does. However, only the apostrophe is currently supported.
 - Keep in mind that YouTube misspells words, so search for variants.
 - The subtitles are broken into small chunks of just a few words at a time, so the search looks at small segments of words and might miss your longer search phrase. So, avoid long phrases or sentences. You'll have better luck with words or phrases 1-3 words in size.
 - Because the .ttml subtitle text is broken into small chunks of words, the results actually show both the chunk that matched and the previous chunk, to give better context. 
-- Do not use punctuation other than an apostrophe like in "I'll" or "can't."
+- Use spaces to ensure you don't get matches on partial words. Or leverage a lack of space to cover parts of a word. Example: " fart " instead of "fart" which matches "farther". Or use " fart" to match "farting" and "farts" as well as "fart"
+- Use "," for AND. Example: " nick , joe " will match episodes where only BOTH "Nick" and "Joe" are mentioned.
+- Use "|" for OR. Example: " jakesters basement | jakester's basement " covers with or without an apostrophe. Though, " jake, basement " would also do that, along with matching " jakes basement " and " jake's basement " or even " Jake's dark basement " as well... so be sure to leverage them wisely.
